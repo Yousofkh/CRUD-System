@@ -1,0 +1,58 @@
+
+nav
+{
+  background-color :#274472;
+  font-family: 'Oswald', 'sans-serif' ;
+}
+.text-color
+{
+    color: #274472 !important;
+}
+nav h1
+{
+    position: relative;
+    font-size: 2rem;
+}
+nav h1::after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20rem;
+  height: 3px;
+  background-color: orange;
+}
+.bg-save ,.bg-cancel 
+{
+    background-color: #274472;
+    padding: 0.5rem 1.4rem;
+    border: #274472 3px solid;
+    color: white !important;
+}
+
+.bg-save:hover ,.bg-save:focus{
+    border: 3px rgb(53, 13, 253) solid;
+    padding: 0.5rem 1.4rem;
+    color: black !important
+}
+.bg-cancel:hover,.bg-cancel:focus{
+    border: rgba(206, 8, 8, 0.711) 3px solid;
+    padding: 0.5rem 1.4rem;
+    color: black !important
+}
+
+
+.icons
+{
+    font-size: 1.4rem !important;
+}
+@media screen and (max-width:992px) {
+   
+    table .container
+    {
+        width: unset!important;
+        margin: unset !important;
+    }
+}
+

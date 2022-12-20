@@ -1,0 +1,110 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="description site here" />
+    <meta name="keywords" content="Key Words Here , 65 key word" />
+    <meta name="author" content="AHMED MENISY" />
+    <link rel="shortcut icon" href="images/crud-operations-logo.png" type="image/x-icon">
+    <title>Crud System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/solid.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+  
+    <nav class="logo text-center py-1  ">
+        <h1 class="text-uppercase fw-bolder text-light">crud - system</h1>
+    </nav>
+
+     <!--  Form to Add Products -->
+      <div class="col-10 mx-auto bg-light rounded shadow-sm my-3 p-4">
+
+    <div class="form-data col-lg-9 mx-auto d-grid gap-3">
+<!--  Product Name  -->
+        <div class="form-floating">
+            <input class="form-control" id="ProductName" type="text"  placeholder=" " />
+            <label for="ProductName">Product Name</label>
+        </div>
+<!--  prodcuct Price -->
+        <div class="form-floating">
+            <input class="form-control" id="productPrice" type="number" placeholder=" "  />
+            <label for="productPrice">product Price</label>
+        </div>
+<!-- product Category -->
+        <div class="form-floating">
+            <input class="form-control " id="ProductCategory" type="text" placeholder=" "  />
+            <label for="ProductCategory">Product Category</label>
+        </div>
+<!--  Product description  -->
+        <div class="form-floating">
+            <textarea placeholder=" " name="productDesc" id="ProductDesc" class="form-control" cols="30" rows="4"></textarea>
+            <label for="ProductDesc">Product Description</label>
+        </div>
+
+ <!--  Save button and cansel button  -->
+        <div class="w-100 d-flex justify-content-center align-items-center  ">
+            <button class="btn bg-save mx-2 fw-bold text-capitalize tab-pane" onclick="validation();"
+                id="saveProduct">Save</button>
+            <button class="btn bg-cancel mx-2 fw-bold text-capitalize" onclick='clearForm();'>Cancel</button>
+      
+        </div>
+    </div>
+    </div>
+    <div class="container m-auto w-75">
+        <input type="text" class="form-control w-75 m-auto mt-4 mb-3" onkeyup="search(this.value)"
+            placeholder="Search by Product Name ......">
+
+        
+    </div>
+
+      <!--  Container to display  table of Our Products  -->
+        <table class=" container table table-striped rounded-1 table-hover">
+            <thead class="border-dark text-center ">
+                <th class="p-2 text-color">No.</th>
+                <th class="p-2 text-color">Name</th>
+                <th class="p-2 text-color">Price</th>
+                <th class="p-2 text-color">Category</th>
+                <th class="p-2 text-color">Description</th>
+                <th class="p-2 text-color">Action</th>
+            </thead>
+            <tbody class="text-center" id="productContainer">
+
+            </tbody>
+        </table>
+
+
+
+
+
+    <script src="javaScript/bootstrap.bundle.min.js"></script>
+    <script src="javaScript/all.min.js"></script>
+    <script src="javaScript/main.js"></script>
+
+</body>
+
+</html>
+
+
+<!-- 
+ <div class="alert alert-danger w-50 warning text-center" role="alert">
+           Product Name Must Start with Capital Letter, and contain at least 3 words
+          </div> 
+
+
+          <div class="alert alert-danger w-50 warning text-center" role="alert">
+            Product Id Must contain Number or Characters
+           </div> 
+
+   <div class="alert alert-danger w-50 warning text-center" role="alert">
+            Product Category must be 'Mobile 'or 'Tv' or 'Laptop'        </div> 
+
+ <div class="alert alert-danger w-50 warning text-center" role="alert">
+            Product Price in range Between 1000 to 10000           </div> 
+ -->
